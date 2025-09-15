@@ -7,11 +7,8 @@ SELECT COUNT(*) AS total_artistas FROM artistas;
 --Exibe apenas as colunas indicadas após o select
 SELECT nome, genero_musical FROM artistas;
 
---Filtra por uma coluna específica
+--Filtra por um valor específico de uma coluna
 SELECT nome, genero_musical FROM artistas WHERE pais_origem = 'Brasil';
 
+--Filtra por id
 SELECT nome, genero_musical FROM artistas WHERE id = 9 OR id = 3;
-
---Altera a tabela (artistas), excluindo a coluna (musica_famosa)
-ALTER TABLE artistas
-DROP COLUMN musica_famosa;
